@@ -15,7 +15,7 @@ public class HelloWorldController {
         String name=request.getParameter("name");  
         String password=request.getParameter("password");  
           
-        if(password.equals("admin")){  
+        if(name.equals("admin") && password.equals("admin")){  
         String message = "HELLO "+name +"! to the world of ANT and SVN.";  
         return new ModelAndView("hellopage", "message", message);  
         }  
