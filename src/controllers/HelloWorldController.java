@@ -16,7 +16,7 @@ public class HelloWorldController {
         String password=request.getParameter("password");  
           
         if(name.equals("admin") && password.equals("admin")){  
-        String message = "HELLO "+name +"! to the world of Continuous Integration with Jenkins, ANT, Github, SVN!!!";  
+        String message = "Welcome "+name +"! to the world of Continuous Integration with Jenkins, ANT, Github, SVN!!!";  
         return new ModelAndView("hellopage", "message", message);  
         }  
         else{  
